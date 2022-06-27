@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>jquery 연습</h1>
+
+<h2>제이퀘리 연습 페이지 입니다.</h2>
+
+
+<div>
+	<button type="button">버튼</button>
+</div>
+
+</body>
+
+	<script type="text/javascript">
+		
+	//값을 먼저 계산하고 페이지를 그림
+		$(document).ready(function(){
+			alert("레디");
+		});
+	
+	/*
+	//페이지를 먼저 그리고 값을 계산
+		$(window).load(function(){
+			alert("래디");	
+		});
+	*/
+	
+	function sum(a, b){
+		console.log(7);
+	}
+	
+	var act = function(){
+		console.log("로드");
+	};
+
+	$(window).load(act); //지정된 값을 넣어서 실행시킨다는 개념  $(window).load((값));
+	$(window).load(sum);
+	</script>
+
+</html>

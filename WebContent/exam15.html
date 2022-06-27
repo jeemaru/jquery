@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째 아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+
+		
+	</ul>
+	<button id="btn" type="button">li요소추가</button>
+
+</body>
+
+<script type="text/javascript">
+
+	$("#btn").on("click", function(){
+		
+	$("ul").append("<li>다섯번째 아이템입니다.</li>");
+	$("ul").append("<li>여섯번째 아이템입니다.</li>");
+	$("ul").append("<li>일곱번째 아이템입니다.</li>");
+	
+	});
+
+	//li 태그를 클릭했을떄 --> query 추가한 li태그는 연동안됨
+	
+	//부모에게 클릭이벤틀 주고, 자식에게 위임함
+	//부모 ul값 아래에 li를 해당시키는듯
+	$("ul").on("click", "li", function(){
+		
+		var $this = $(this).text();
+		console.log($this);
+		
+	});
+
+
+</script>
+
+</html>

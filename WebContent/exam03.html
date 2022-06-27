@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	
+	
+	<ul>
+		<li id="first"> 텍스트1 텍스트1 텍스트1 텍스트1 텍스트1 </li>
+		<li id="second"> 텍스트2 텍스트2 텍스트2 텍스트2 텍스트2 </li>
+		<li id="third"> 텍스트3 텍스트3 텍스트3 텍스트3 텍스트3 </li>
+		<li id="fourth"> 텍스트4 텍스트4 텍스트4 텍스트4 텍스트4 </li>
+		<li id="first" class="fi"> 텍스트1-1 텍스트1-1 텍스트1-1 텍스트1-1 텍스트1-1 </li>
+	</ul>
+
+
+</body>
+	
+	<script type="text/javascript">
+	
+		var fi = $("#first");
+		fi.css("color", "#00ff00");
+		console.log(fi);
+		
+		$("#second").css("color", "#ff0000");
+		
+		$("#third").css("color", "#ff00ff");
+		
+		var four = $("#fourth");
+		four.css("color", "#0000ff");
+		console.log(four);
+		
+		$(".fi").css("color", "#00ffff");
+	
+	</script>
+	
+	
+
+
+</html>
